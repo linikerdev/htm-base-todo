@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #1396cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#todo {
+  background-color: #fff;
+  min-width: 400px;
+  width: 30%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#todo .header {
+  font-weight: 600;
+  color: #1396cb;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+#todo .header .title {
+  flex: 1;
+}
+#todo .header .title {
+  align-self: flex-end;
+}
+#todo .header .add {
+  line-height: 2.5px;
+  align-self: flex-end;
+  background-color: #005073;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+/* insert */
+#todo .insert {
+  background: #e2edf3;
+  padding: 10px;
+  display: flex;
+  margin: 10px auto;
+}
+#todo .insert input {
+  float: 1;
+  flex-grow: 1;
+  padding: 8px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #01afd7;
+  outline: none;
+}
+#todo .insert button {
+  font-size: 14px;
+  padding: 10px;
+  background: #01afd7;
+  color: #fff;
+}
+/* content */
+
+#todo .content ul {
+  list-style: none;
+}
+
+#todo .content ul {
+  list-style: none;
+}
+#todo .content ul li.new {
+  background-color: #01afd7;
+  border: thin solid #1396cb;
+}
+#todo .content ul li.ok {
+  background-color: #e2f3f1;
+  border: thin solid #4caf50;
+  color: #4caf50;
+}
+#todo .content ul li.ok .text {
+  text-decoration: line-through;
+}
+#todo .content ul li {
+  padding: 10px;
+  color: #fff;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: flex;
+}
+
+#todo .content ul li .text {
+  flex: 1;
+}
+#todo .content ul li .btn {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+}
