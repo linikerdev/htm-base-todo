@@ -19,13 +19,25 @@ body {
 
 #todo {
   background-color: #fff;
-  min-width: 400px;
+  min-width: 500px;
   width: 30%;
   padding: 8px;
   border-radius: 5px;
 }
+#todo .notask {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  float: 1;
+  color: #666;
+}
 
-#todo .header {
+
+
+
+/* HEADER */
+
+.header {
   font-weight: 600;
   color: #1396cb;
   display: flex;
@@ -35,13 +47,14 @@ body {
   padding: 10px 5px;
   margin-bottom: 20px;
 }
-#todo .header .title {
+.header .title {
   flex: 1;
 }
-#todo .header .title {
+.header .title {
   align-self: flex-end;
 }
-#todo .header .add {
+.header .add {
+  border-radius: 2px;
   line-height: 2.5px;
   align-self: flex-end;
   background-color: #005073;
@@ -49,51 +62,69 @@ body {
   color: #fff;
   cursor: pointer;
 }
-/* insert */
-#todo .insert {
+.header .add:active {
+  background-color: #02151d;
+}
+.header .closeAdd {
+  border-radius: 2px;
+  line-height: 2.5px;
+  align-self: flex-end;
+  background-color: #e57373;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.header .closeAdd:active {
+  background-color: #d81b60;
+}
+
+
+/* CONTENT */
+
+.content {
+  max-height: 510px;
+  overflow-y: auto;
+}
+
+
+/* INSERT */
+.insert {
   background: #e2edf3;
   padding: 10px;
   display: flex;
   margin: 10px auto;
 }
-#todo .insert input {
+.insert input {
   float: 1;
   flex-grow: 1;
   padding: 8px 5px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
   color: #01afd7;
   outline: none;
+  border-radius: 5px 0 0 5px;
 }
-#todo .insert button {
+.insert button {
+  border: none;
+  outline: none;
   font-size: 14px;
   padding: 10px;
   background: #01afd7;
   color: #fff;
+  border-radius: 0 5px 5px 0;
 }
+
+.insert button:active {
+  background: #016f88;
+}
+.insert button:disabled {
+  background: #666;
+  color: #ddd;
+}
+
+
 /* content */
-
-#todo .content ul {
-  list-style: none;
-}
-
-#todo .content ul {
-  list-style: none;
-}
-#todo .content ul li.new {
-  background-color: #01afd7;
-  border: thin solid #1396cb;
-}
-#todo .content ul li.ok {
-  background-color: #e2f3f1;
-  border: thin solid #4caf50;
-  color: #4caf50;
-}
-#todo .content ul li.ok .text {
-  text-decoration: line-through;
-}
-#todo .content ul li {
+.item {
   padding: 10px;
   color: #fff;
   margin: 10px auto;
@@ -101,11 +132,28 @@ body {
   display: flex;
 }
 
-#todo .content ul li .text {
+.item .text {
   flex: 1;
 }
-#todo .content ul li .btn {
+.item .btn {
   font-size: 20px;
   cursor: pointer;
   margin: 0 5px;
+}
+.item .btn:hover {
+  color: #016f88;
+}
+
+.new {
+  background-color: #01afd7;
+  border: thin solid #1396cb;
+}
+.done {
+  background-color: #4caf50;
+  border: thin solid #fff;
+  color: #fff;
+}
+.done .text {
+  text-decoration: line-through;
+  color: #fff;
 }

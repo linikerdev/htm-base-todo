@@ -23,53 +23,43 @@
     <div id="todo">
       <div class="header">
         <div class="title">Gerenciador de Tarefas</div>
+
         <div class="add">
           <i class="fa fa-plus" aria-hidden="true"></i>
         </div>
+        <!-- <div class="closeAdd">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </div> -->
       </div>
       <div class="insert">
-        <input type="text" />
+        <input type="text" placeholder="Insira a tarefa..." />
         <button>ADD</button>
       </div>
       <div class="content">
-        <ul>
-          <li class="new">
-            <div class="text">Ir na cozinha</div>
-            <div class="btn">
-              <i class="fa fa-trash" aria-hidden="true"></i>
-            </div>
-            <div class="btn">
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </li>
-          <li class="new">
-            <div class="text">Ir na cozinha</div>
-            <div class="btn">
-              <i class="fa fa-trash" aria-hidden="true"></i>
-            </div>
-            <div class="btn">
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </li>
-          <li class="new">
-            <div class="text">Ir na cozinha</div>
-            <div class="btn">
-              <i class="fa fa-trash" aria-hidden="true"></i>
-            </div>
-            <div class="btn">
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </li>
-          <li class="ok">
-            <div class="text">Ir na cozinha</div>
-            <div class="btn">
-              <i class="fa fa-repeat" aria-hidden="true"></i>
-            </div>
-            <div class="btn">
-              <i class="fa fa-trash" aria-hidden="true"></i>
-            </div>
-          </li>
-        </ul>
+        <div class="item new">
+          <div class="text">
+            Ir na cozinha
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+          <div class="btn">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </div>
+          <div class="btn">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="item done">
+          <div class="text">
+            Ir na cozinha
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+          <div class="btn">
+            <i class="fa fa-times-circle" aria-hidden="true"></i>
+          </div>
+          <div class="btn">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </div>
+        </div>
       </div>
     </div>
   </body>
